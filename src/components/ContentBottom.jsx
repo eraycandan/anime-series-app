@@ -5,7 +5,7 @@ import { IoStarOutline } from "react-icons/io5";
 import { IoStar } from "react-icons/io5";
 
 function ContentBottom({ reviews }) {
-    console.log(reviews)
+    // console.log(reviews)
     const { date, reactions, review, score, user } = reviews;
 
 

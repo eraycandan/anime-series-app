@@ -31,7 +31,7 @@ function HomePage() {
     const getAnimeByName = async () => {
         try {
             const response = await animeDataService.getAnimeByName(animeName);
-            console.log(response)
+            // console.log(response)
             if (response && response.length > 0) {
                 setAnimes(response)
             } else {
@@ -47,7 +47,7 @@ function HomePage() {
     const getCharactersByAnime = async () => {
         try {
             const response = await animeDataService.getCharactersByAnime(animes[0].mal_id);
-            console.log(response)
+            // console.log(response)
             setCharacterAnime(response)
         } catch (error) {
             console.log(error)
@@ -59,7 +59,7 @@ function HomePage() {
     const getAnimeReviews = async () => {
         try {
             const response = await animeDataService.getAnimeReviews(animes[0].mal_id);
-            console.log(response)
+            // console.log(response)
             setReviewsAnime(response)
         } catch (error) {
             console.log(error)
